@@ -1,0 +1,27 @@
+{
+  "name": "playwright-practice",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run allure",
+    "test": "npx cucumber-js tests/features --format json:reports/allure-results/allure-results.json --format html:reports/cucumber-report.html",
+    "process": "npx ts-node process-allure-results.ts",
+    "report": "npx allure generate reports/allure-results -o reports/allure-report --clean",
+    "serve": "npx allure serve reports/allure-results",
+    "allure": "npm run test && npm run process && npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "allure-commandline": "^2.38.1",
+    "allure-cucumberjs": "^3.7.0",
+    "allure-js-commons": "^3.7.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}

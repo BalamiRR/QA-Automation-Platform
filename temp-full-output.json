@@ -1,0 +1,1094 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "forgot-password-recovery;submit-password-recovery-request-with-valid-email",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Submit password recovery request with valid email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 924299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the forgot password page",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2925949700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter email \"practice@expandtesting.com\" in the password recovery form",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 294702500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I submit the password recovery form",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4236768899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a success message for password recovery",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 629051800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 271899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "forgot-password-recovery;submit-password-recovery-request-with-unregistered-email",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Submit password recovery request with unregistered email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 203199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the forgot password page",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2376421199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter email \"unregistered@example.com\" in the password recovery form",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225560799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I submit the password recovery form",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3012378700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see a success message for password recovery",
+            "match": {
+              "location": "src\\steps\\forgot-password.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 661006499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 200800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "forgot-password-recovery",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Forgot Password Recovery",
+    "tags": [],
+    "uri": "tests\\features\\forgot-password.feature"
+  },
+  {
+    "description": "  As a user of the practice website\n  I want to enter values into web inputs and view the displayed output",
+    "elements": [
+      {
+        "description": "",
+        "id": "web-inputs-interaction;display-entered-inputs",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Display entered inputs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 211299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the inputs page",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2571377799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter number \"42\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300901499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter text \"Hello\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23153099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter the input password \"P@ssw0rd\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35896499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I enter date \"2026-04-13\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21654099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the display inputs button",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2010013799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the output number \"42\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134617600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I should see the output text \"Hello\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28716800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I should see the output password \"P@ssw0rd\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32659100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I should see the output date \"2026-04-13\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 703523400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 208500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "web-inputs-interaction;clear-input-values-removes-outputs",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Clear input values removes outputs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am on the inputs page",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2266170399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I enter number \"123\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216660500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I enter text \"ClearTest\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16253400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I enter the input password \"Secret!\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20420500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I enter date \"2026-05-01\"",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18788699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I click the display inputs button",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 690333099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click the clear inputs button",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67034599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the inputs should be cleared",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36776799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "there should be no input outputs visible",
+            "match": {
+              "location": "src\\steps\\inputs.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 489922099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 196300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "web-inputs-interaction",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Web inputs interaction",
+    "tags": [],
+    "uri": "tests\\features\\inputs.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 138200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2008032200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter username \"practice@expandtesting.com\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217493399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I enter password \"SuperSecretPassword!\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22745500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the login button",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3661825500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be logged in successfully",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 680811600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 208400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 136700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2068120900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I enter username \"invalid@example.com\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87603599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter password \"wrongpassword\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74532800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the login button",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3645152799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 618601999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 245300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Login",
+    "tags": [],
+    "uri": "tests\\features\\login.feature"
+  },
+  {
+    "description": "  As a user of the practice website\n  I want to login using OTP (One-Time Password)\n  So that I can access the system securely",
+    "elements": [
+      {
+        "description": "",
+        "id": "otp-login;send-otp-to-valid-email",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Send OTP to valid email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the OTP login page",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2235214400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter email \"practice@expandtesting.com\" for OTP login",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65647900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the send OTP button",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1462412499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the OTP sent message for \"practice@expandtesting.com\"",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107584000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the OTP input field should be visible",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6195500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the verify OTP button should be visible",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4702599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 152300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "otp-login;verify-otp-with-correct-code",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify OTP with correct code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the OTP login page",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3643336999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I enter email \"practice@expandtesting.com\" for OTP login",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 368520199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click the send OTP button",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1147939699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter OTP code \"214365\"",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187235800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I click the verify OTP button",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5268876100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should be logged in successfully via OTP",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 903899199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 245800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "otp-login;verify-otp-with-incorrect-code",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify OTP with incorrect code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 227500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am on the OTP login page",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2748065300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I enter email \"practice@expandtesting.com\" for OTP login",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216946799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I click the send OTP button",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1628121800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I enter OTP code \"123456\"",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131816800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I click the verify OTP button",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2969464300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I should see an OTP error message",
+            "match": {
+              "location": "src\\steps\\otp-login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 543939299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 250299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "otp-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OTP Login",
+    "tags": [],
+    "uri": "tests\\features\\otp-login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-registration;successful-user-registration",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful user registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 183699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "src\\steps\\register.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2287095300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill in the registration form with valid details",
+            "match": {
+              "location": "src\\steps\\register.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 301687000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I submit the registration form",
+            "match": {
+              "location": "src\\steps\\register.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1721343399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a success message",
+            "match": {
+              "location": "src\\steps\\register.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 725268600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 206500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-registration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Registration",
+    "tags": [],
+    "uri": "tests\\features\\register.feature"
+  }
+]
