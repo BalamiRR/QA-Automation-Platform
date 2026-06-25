@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class DynamicPaginationTablePage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/dynamic-pagination-table';
+  private url = `${getBaseUrl()}/dynamic-pagination-table`;
   private tableSelector = 'table';
   private headerCells = 'table thead th';
   private rowSelector = 'table tbody tr';

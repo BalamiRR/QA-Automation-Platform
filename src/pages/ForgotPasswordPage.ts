@@ -1,4 +1,5 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class ForgotPasswordPage {
   private page: Page;
@@ -11,7 +12,7 @@ export class ForgotPasswordPage {
   }
 
   async navigate(): Promise<void> {
-    await this.page.goto('https://practice.expandtesting.com/forgot-password', {
+    await this.page.goto(`${getBaseUrl()}/forgot-password`, {
       waitUntil: 'domcontentloaded',
       timeout: 30000
     });

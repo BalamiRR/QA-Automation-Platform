@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class DynamicTablePage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/dynamic-table';
+  private url = `${getBaseUrl()}/dynamic-table`;
   private tableSelector = 'table';
   private headerCells = 'table thead th';
   private rowSelector = 'table tbody tr';

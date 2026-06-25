@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class LocatorsPage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/locators';
+  private url = `${getBaseUrl()}/locators`;
   private heading = 'h1';
   private countrySelect = '#countrySelect';
   private newsletterEmailInput = '#newsletterEmail';

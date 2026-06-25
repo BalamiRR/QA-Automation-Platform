@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class FormValidationPage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/form-validation';
+  private url = `${getBaseUrl()}/form-validation`;
   private contactNameInput = '#validationCustom01';
   private contactNumberInput = 'input[name="contactnumber"]';
   private pickupDateInput = 'input[name="pickupdate"]';

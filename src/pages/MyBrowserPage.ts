@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class MyBrowserPage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/my-browser';
+  private url = `${getBaseUrl()}/my-browser`;
   private browserToggleButton = '#browser-toggle';
   private browserInfoSection = 'div:has-text("User Agent")';
 

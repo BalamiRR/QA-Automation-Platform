@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class RadioButtonsPage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/radio-buttons';
+  private url = `${getBaseUrl()}/radio-buttons`;
   private colorRadioGroup = 'input[name="color"]';
   private sportRadioGroup = 'input[name="sport"]';
 

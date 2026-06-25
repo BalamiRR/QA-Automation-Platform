@@ -1,4 +1,5 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class OtpLoginPage {
   private page: Page;
@@ -15,7 +16,7 @@ export class OtpLoginPage {
   }
 
   async navigate(): Promise<void> {
-    await this.page.goto('https://practice.expandtesting.com/otp-login', {
+    await this.page.goto(`${getBaseUrl()}/otp-login`, {
       waitUntil: 'domcontentloaded',
       timeout: 30000
     });

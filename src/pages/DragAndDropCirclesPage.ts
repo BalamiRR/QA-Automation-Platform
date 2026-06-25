@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class DragAndDropCirclesPage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/drag-and-drop-circles';
+  private url = `${getBaseUrl()}/drag-and-drop-circles`;
   private header = 'h1';
   private target = '#target';
   private sourceRed = '#source .red';

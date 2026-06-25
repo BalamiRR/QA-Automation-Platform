@@ -2,12 +2,13 @@
   "name": "playwright-practice",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run allure",
-    "test": "npx cucumber-js tests/features --format json:reports/allure-results/allure-results.json --format html:reports/cucumber-report.html",
+    "start": "npm run test:env",
+    "test": "npm run test:env",
+    "test:env": "node conf/run-tests.js",
     "process": "npx ts-node process-allure-results.ts",
-    "report": "npx allure generate reports/allure-results -o reports/allure-report --clean",
+    "report": "npx allure generate reports/allure-report -o reports/allure-report --clean",
     "serve": "npx allure serve reports/allure-results",
-    "allure": "npm run test && npm run process && npm run serve"
+    "allure": "npm run test:env && npm run process && npm run serve"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,11 @@
     "allure-cucumberjs": "^3.7.0",
     "allure-js-commons": "^3.7.0",
     "cucumber-html-reporter": "^7.2.0",
+    "dotenv": "^16.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
-  }
+  },
+  "overrides": {
+  "@cucumber/messages": "32.3.1"
+}
 }

@@ -1,7 +1,7 @@
-import { chromium } from 'playwright';
+import { createBrowser } from '../src/support/browser';
 
 async function inspectForgotPasswordAfterSubmit() {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await createBrowser();
   const page = await browser.newPage();
   
   await page.goto('https://practice.expandtesting.com/forgot-password', {

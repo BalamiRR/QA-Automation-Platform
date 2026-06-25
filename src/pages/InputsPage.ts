@@ -1,4 +1,5 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class InputsPage {
   private page: Page;
@@ -18,7 +19,7 @@ export class InputsPage {
   }
 
   async navigate(): Promise<void> {
-    await this.page.goto('https://practice.expandtesting.com/inputs', {
+    await this.page.goto(`${getBaseUrl()}/inputs`, {
       waitUntil: 'domcontentloaded',
       timeout: 30000
     });

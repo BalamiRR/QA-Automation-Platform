@@ -1,8 +1,9 @@
 import { Page } from '@playwright/test';
+import { getBaseUrl } from '../config/baseUrl';
 
 export class DragAndDropPage {
   private page: Page;
-  private url = 'https://practice.expandtesting.com/drag-and-drop';
+  private url = `${getBaseUrl()}/drag-and-drop`;
   private header = 'h1';
   private columnA = '#column-a';
   private columnB = '#column-b';

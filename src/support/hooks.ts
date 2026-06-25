@@ -1,5 +1,6 @@
 import { Before, After, setDefaultTimeout, setWorldConstructor, World } from '@cucumber/cucumber';
-import { Browser, Page, chromium } from 'playwright';
+import { Browser, Page } from 'playwright';
+import { createBrowser } from './browser';
 
 export class CustomWorld extends World {
   browser!: Browser;
@@ -11,7 +12,7 @@ setWorldConstructor(CustomWorld);
 setDefaultTimeout(60000);
 
 Before(async function (this: CustomWorld): Promise<void> {
-  this.browser = await chromium.launch({ headless: true }); // Or false for debugging
+  this.browser = await createBrowser();
   this.page = await this.browser.newPage();
 });
 

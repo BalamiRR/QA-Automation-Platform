@@ -16,11 +16,23 @@ This project uses **Playwright** for browser automation, **Cucumber** for BDD te
    npx playwright install
    ```
 
+3. Configure local environment variables:
+   ```bash
+   copy .env.example .env
+   ```
+
+4. Update `.env` with the values you want to use.
+
 ## ▶️ Running Tests
 
-### Run all tests:
+### Run all tests with `.env` configuration:
 ```bash
 npm test
+```
+
+### Override `.env` values on command line:
+```bash
+npm run test:env -- --env preprod --tags "@DFSXRAY-122680" --platform desktop
 ```
 
 ### Run with test report:
