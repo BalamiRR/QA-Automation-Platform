@@ -3,7 +3,7 @@ Feature: Drag and Drop page verification
   I want to validate the drag and drop demo page
   So that draggable boxes and swap behavior are covered
 
-  @DFSXRAY-000111
+  @DFSXRAY-0001112
   Scenario: Verify the drag and drop page loads correctly
     Given I am on the drag and drop page
     Then the drag and drop page should have a visible header
